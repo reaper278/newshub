@@ -88,7 +88,7 @@ getuserdata();
         <Navbar.Link> <div className='Monthlyhighlights' onClick={()=>{Nevigate('/Monthlyhighlights')}}>Monthlyhighlights</div> </Navbar.Link>
 
         <Navbar.Link> <div className='bussiness' onClick={()=>{Nevigate('/bussiness')}}>Bussiness</div> </Navbar.Link>
-        <Navbar.Link> <div className='entertainment' onClick={()=>{Nevigate('/entertainmen')}}>Entertainment</div> </Navbar.Link>
+        <Navbar.Link> <div className='entertainment' onClick={()=>{Nevigate('/entertainment')}}>Entertainment</div> </Navbar.Link>
         <Navbar.Link> <div className='sports' onClick={()=>{Nevigate('/sports')}}>Sports</div> </Navbar.Link>
         <Navbar.Link> <div className='health' onClick={()=>{Nevigate('/health')}}>Health</div> </Navbar.Link>
         <Navbar.Link> <div className='technology' onClick={()=>{Nevigate('/technology')}}>Technology</div> </Navbar.Link>

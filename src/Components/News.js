@@ -3,7 +3,6 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Loader from "./Loader";
 import Newsitem from "./Newsitem";
 
-
  const News =(props)=> {
 const[article, setArticle]=useState([])
 const[loading, setLoading]=useState(true)
@@ -62,15 +61,12 @@ setTotal(parsedata.totalResults)
   // };
   const mount= async()=>{
     props.setProgress(10)
-    // const url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pagesize=${props.page_size}`;
-    const url = `https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=10&apikey=f73ac7a4f53cf3fd119f63a5ecf9e749`;   
+    const url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pagesize=${props.page_size}`;
     props.setProgress(30)
     // this.setState({ loding: true });
     const data = await fetch(url);
-    const parsedata = await data.json();
-    console.log(parsedata)
     props.setProgress(50)
-    
+    const parsedata = await data.json();
     props.setProgress(70)
     setArticle(parsedata.articles)
     setLoading(false)
@@ -94,15 +90,15 @@ setTotal(parsedata.totalResults)
           {loading && <Loader></Loader>}
           <div width="container ">
           <InfiniteScroll
-          dataLength={article?.length}
+          dataLength={article.length}
           next={fetchMoreData}
-          hasMore={article?.length !== total}
+          hasMore={article.length !== total}
           loader={<Loader/>}
           >
        <div className="container " style={{marginTop:"70px"}}>
             <div className="row ">
             {
-              article?.map((element) => {
+              article.map((element) => {
                 return (
                   <div
                     className="col-md-4 "
@@ -115,7 +111,7 @@ setTotal(parsedata.totalResults)
                           ? element.description.slice(0, 120)
                           : " "
                       }
-                      ImageUrl={element.image ? element.image : "  "}
+                      ImageUrl={element.urlToImage ? element.urlToImage : "  "}
                       NewsUrl={element.url ? element.url : " "}
                       time={element.publishedAt}
                       author={element.author}
