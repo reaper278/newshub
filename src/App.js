@@ -14,6 +14,7 @@ import Addnews from './Components/Addnews';
 import Activity from './Components/Activity';
 import Monthlyhighlights from './Components/Monthlyhighlights';
 import Profile from './Components/Profile';
+import Footer from './Components/Footer';
 
 
 const App = () => {
@@ -55,14 +56,9 @@ const App = () => {
                   <Route exact path="/Signup" element={<Signup></Signup> } />
                   <Route exact path="/ADDNews" element={  <Addnews></Addnews>} />
                   <Route exact path="/Activity" element={<Activity></Activity>} />
-                  <Route exact path="/Monthlyhighlights" element={
-                  <Monthlyhighlights></Monthlyhighlights> 
-              
-                  } />
- <Route exact path="/Profile" element={
-                
-               <Profile></Profile>
-                  } />
+                  <Route exact path="/Monthlyhighlights" element={<Monthlyhighlights></Monthlyhighlights>} />
+                  <Route exacht pat="/Profile" element={<Profile></Profile>} />
+                  <Route exacht pat="/Footer" element={<Footer></Footer>} />
 
 
                 </Routes>
