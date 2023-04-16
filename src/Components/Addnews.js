@@ -86,59 +86,59 @@ console.log(error.message);
   return (
     <>
    
-      <div class="container">
+      <div className="container">
   <main>
-    <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4 " src="others/addnews.jpg" style={{borderRadius:"45px"}}alt="" width="92" height="77"/>
+    <div className="py-5 text-center">
+      <img className="d-block mx-auto mb-4 " src="others/addnews.jpg" style={{borderRadius:"45px"}}alt="" width="92" height="77"/>
       <h2>ADD NEWS</h2>
       
     </div>
 
-    <div class="row justify-content-center g-5">
+    <div className="row justify-content-center g-5">
      
-      <div class="col-md-8 col-lg-8">
-        <h4 class="mb-3">ADD News</h4>
-        <form class="needs-validation">
-          <div class="row g-3">
+      <div className="col-md-8 col-lg-8">
+        <h4 className="mb-3">ADD News</h4>
+        <form className="needs-validation">
+          <div className="row g-3">
           
           
 
-            <div class="col-12">
-              <label for="address" class="form-label">Title</label>
-              <input type="text" class="form-control" id="title" name="title"placeholder="Title of the news" required/>
-              <div class="invalid-feedback">
+            <div className="col-12">
+              <label for="address" className="form-label">Title</label>
+              <input type="text" className="form-control" id="title" name="title"placeholder="Title of the news" required/>
+              <div className="invalid-feedback">
                 Please enter the Title of the news.
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="address" class="form-label">Source</label>
-              <input type="text" class="form-control" id="Source" name="Source"placeholder="Source of the news" required/>
-              <div class="invalid-feedback">
+            <div className="col-12">
+              <label for="address" className="form-label">Source</label>
+              <input type="text" className="form-control" id="Source" name="Source"placeholder="Source of the news" required/>
+              <div className="invalid-feedback">
                 Please enter the Source of the news.
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="address" class="form-label">Description</label>
-              <input type="text" class="form-control" id="Description" name="Description"placeholder="Description of the news" required/>
-              <div class="invalid-feedback">
+            <div className="col-12">
+              <label for="address" className="form-label">Description</label>
+              <input type="text" className="form-control" id="Description" name="Description"placeholder="Description of the news" required/>
+              <div className="invalid-feedback">
                 Please enter the Description of the news.
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="address" class="form-label">Tag</label>
-              <input type="text" class="form-control" id="Tag" name="Tag"placeholder="Tag" required/>
-              <div class="invalid-feedback">
+            <div className="col-12">
+              <label for="address" className="form-label">Tag</label>
+              <input type="text" className="form-control" id="Tag" name="Tag"placeholder="Tag" required/>
+              <div className="invalid-feedback">
                 Please enter the Tag of the news.
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="address" class="form-label">Image</label>
-              <input type="file" class="form-control" id="newsimage" name="newsimage"placeholder="Please insert image" onChange={imagepreview} required/>
-              <div class="invalid-feedback">
+            <div className="col-12">
+              <label for="address" className="form-label">Image</label>
+              <input type="file" className="form-control" id="newsimage" name="newsimage"placeholder="Please insert image" onChange={imagepreview} required/>
+              <div className="invalid-feedback">
                 Please insert Image of the news.
               </div>
             </div>
@@ -155,7 +155,7 @@ console.log(error.message);
             </div>
       
           
-          <button class="w-100 btn btn-primary btn-lg my-4" type="button" onClick={addNewsApi}>ADD</button>
+          <button className="w-100 btn btn-primary btn-lg my-4" type="button" onClick={addNewsApi}>ADD</button>
         
         </form>
         </div>

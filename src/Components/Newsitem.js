@@ -7,18 +7,18 @@ import { useState } from 'react';
    
     return (
     <>
-        <div class="card m-3" >
-  <img src={props.ImageUrl} class="card-img-top" alt="..."      width="400" 
+        <div className="card m-3" >
+  <img src={props.ImageUrl} className="card-img-top" alt="..."      width="400" 
      height="200" />
-  <div class="card-body">
-    <h5 class="card-title">{props.title}.....</h5>
-    <p class="card-text">{props.desc}</p>
-    {/* <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{zIndex:1}}>
+  <div className="card-body">
+    <h5 className="card-title">{props.title}.....</h5>
+    <p className="card-text">{props.desc}</p>
+    {/* <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{zIndex:1}}>
     {props.source}
-    <span class="visually-hidden"></span>
+    <span className="visually-hidden"></span>
   </span> */}
-    <p class="card-text"><small class="text-muted"> {(new Date(props.time).toUTCString())} By {props.author?props.author:"Rohit"}</small></p>
-    <a href={props.NewsUrl} target= "_blank" class="btn btn-primary">Read More</a>
+    <p className="card-text"><small className="text-muted"> {(new Date(props.time).toUTCString())} By {props.author?props.author:"Rohit"}</small></p>
+    <a href={props.NewsUrl} target= "_blank" className="btn btn-primary">Read More</a>
   
   </div>
 </div>
