@@ -58,15 +58,14 @@ const App = () => {
                   <Route exact path="/Activity" element={<Activity></Activity>} />
                   <Route exact path="/Monthlyhighlights" element={<Monthlyhighlights></Monthlyhighlights>} />
                   <Route exacht pat="/Profile" element={<Profile></Profile>} />
-                  <Route exacht pat="/Footer" element={<Footer></Footer>} />
-
+                  
 
                 </Routes>
               </div>
             </div>
           </div>
         </BrowserRouter>
-        
+        <Footer></Footer>
       </>
 
     </div>
