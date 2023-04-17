@@ -27,38 +27,7 @@ setTotal(parsedata.totalResults)
   
   };
   
-  // async update() {
-  //   const url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=32514fc4df65448aa335221b5539e39d&page=${this.state.page}&pagesize=${this.props.page_size}`;
-
-  //   this.setState({ loding: true });
-  //   const data = await fetch(url);
-  //   const parsedata = await data.json();
-  //   this.setState({ article: parsedata.articles, loding: false });
-  //   this.setState({total : parsedata.totalResults});
-   
-  // }
-
-  // next = async () => {
-  //   const url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=b7c59270c7b546ea9e3ceeaf5bdae468&page=${this.state.page+1}&pagesize=${this.props.page_size}`;
-
-  //   this.setState({ loding: true });
-  //   const data = await fetch(url);
-  //   const parsedata = await data.json();
-  //   this.setState({ article: parsedata.articles, loding: false,page: this.state.page + 1 ,total : parsedata.totalResults });
-   
-
-  // };
-
-  // prev = async () => {
-  //   const url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=b7c59270c7b546ea9e3ceeaf5bdae468&page=${this.state.page-1}&pagesize=${this.props.page_size}`;
-
-  //   this.setState({ loding: true });
-  //   const data = await fetch(url);
-  //   const parsedata = await data.json();
-  //   this.setState({ article: parsedata.articles, loding: false,page: this.state.page - 1,total : parsedata.totalResults  });
-   
   
-  // };
   const mount= async()=>{
     props.setProgress(10)
     const url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pagesize=${props.page_size}`;
@@ -123,30 +92,7 @@ setTotal(parsedata.totalResults)
           </div>
           </div>
           </InfiniteScroll>
-          {/* <div class="d-flex justify-content-between">
-            <button
-              type="button"
-              class="btn btn-dark"
-              disabled={this.state.page <= 1}
-              onClick={this.prev}
-            >
-              previous
-            </button>
-            <button
-              type="button"
-              class="btn btn-dark"
-              disabled={
-                this.state.page + 1 >
-                Math.ceil(this.state.total / this.props.page_size)
-              }
-              onClick={this.next}
-            >
-              Next
-            </button>  
-          </div> */
           
-          
-          }
     </div>
       </>
     );

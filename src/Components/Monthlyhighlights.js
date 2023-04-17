@@ -66,8 +66,7 @@ export default function Monthlyhighlights() {
                       ImageUrl={element.image ? element.image : "  "}
                       NewsUrl={element.source ? element.source  : " "}
                       time={element.date}
-                      // author={element.author}
-                      // source={element.source.name}
+                      
                  
                     />
                   </div>

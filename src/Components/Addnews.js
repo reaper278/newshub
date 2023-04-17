@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import './Addnews.css'
 import { Navigate, useNavigate } from 'react-router-dom'
+
 export default function Addnews() {
+
+/* This code is using the `useNavigate` hook from the `react-router-dom` library to navigate to the
+login page if the user is not authenticated. It checks if the `auth-token` key is present in the
+`sessionStorage` object, and if not, it calls the `Navigate` function to redirect the user to the
+login page. This code is executed once when the component mounts, as it is wrapped in a `useEffect`
+hook with an empty dependency array. */
+
 let Navigate=useNavigate();
 useEffect(()=>{
   if(!sessionStorage.getItem("auth-token")){
@@ -11,6 +19,11 @@ useEffect(()=>{
 
 const [image,setimage]=useState({})
 const [filesize,setfilesize]=useState(0)
+ /**
+  * This function converts a file to a base64 encoded string using the FileReader API in JavaScript.
+  * @param file - The file parameter is the file that needs to be converted to a base64 string. It
+  * could be an image, audio, video, or any other type of file.
+  */
   const toBase64 = (file) =>
   new Promise((resolve, reject) => {
     const reader = new FileReader();
