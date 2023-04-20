@@ -48,7 +48,8 @@ export default function Activity() {
     }
   };
   return (
-    <div className='Activity pt-4'>
+   
+   <div className="Activity pt-4 min-vh-100">
     
       <div className="container">
       <div className="row">

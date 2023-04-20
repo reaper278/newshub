@@ -45,7 +45,7 @@ export default function Profile() {
     }
    
   return (
-    <div>
+    <div className='min-vh-100'>
       <div className="container py-5">
    
     <div className="row">
